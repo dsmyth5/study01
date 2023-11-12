@@ -1,0 +1,150 @@
+/* defaults */
+*{box-sizing: border-box;margin: 0; padding: 0;}
+section{margin: 12px;}
+h1{
+	text-align: center;
+	padding: 0;
+	border: 0;
+	margin: 0;	
+}
+h3{
+	text-align: center;
+	padding: 5px;
+	border: 0;
+	margin: 0;	
+	width: 100%;
+	background-color: lightgray;
+}
+h4{
+	margin: 0;
+	padding: 4px;
+	text-align: center;	
+}
+input{
+	width: max-content;
+	margin: 2px;
+}
+
+/* 
+================
+ buttons 
+================
+*/ 
+.btn-large{
+	background-color: lightgray;	
+	display: block;
+	padding: 20px;
+	border: 2px black solid;
+	margin: 4px 0;
+	width: 100px;
+}
+.btn-large:hover{cursor: pointer;
+	background-color: antiquewhite;}
+
+.btn-refresh{
+	background-color: lightgray;	
+	display: block;
+	padding: 0;
+	border: 0;
+	border-left: 2px black solid;
+	margin: 0;
+	width: 100px;
+}
+.btn-refresh:hover{cursor: pointer;
+	background-color: antiquewhite;}
+
+.btn-submit{
+	background-color: white;	
+	display: block;
+	padding: 5px;
+	border: 1px black solid;
+	margin: 0;
+	width: 50px;
+}
+.btn-submit:hover{cursor: pointer;
+	background-color: antiquewhite;}
+
+
+/* 
+================
+ headder section 
+================
+*/ 
+.section-heading{
+	padding: 5px;
+	border: 2px black solid;
+	width: 100%;
+	margin: 0;	
+	background-color: lightgray;
+}
+
+
+/* 
+================
+ middle section 
+================
+*/ 
+.section-middle{
+	display: flex;	
+}
+.student-input-box{
+	background-color: lightgray;	
+	/* display: inline; */
+	padding: 20px;
+	border: 2px black solid;
+	margin: 4px;
+ 	max-width: 300px;
+}
+.student-head{
+	/* background-color: lightgray; */
+	display: flex;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	margin: 0;
+	justify-content: flex-end;
+	border-width: 0 0 2px 0;
+	border-color: black;
+	border-style: solid;
+}
+
+
+/* 
+================
+bottom secetion 
+================
+*/ 
+.section-students{
+	border: 2px black solid;	
+	padding: 0;
+	width: 100%;
+
+}
+.student-table{
+	display: table;	
+	padding: 0;
+	width: 100%;
+	border: 0;
+	margin: 0;
+	border-collapse: collapse;	
+}
+
+.student-row{
+	display: table-row;	
+	height: 20px;
+}
+.student-col{
+	width: 25%;
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+
+	display: inline-block;
+	display: table-cell;		
+	padding: 5px;
+}
+
+.student-col-end{
+
+
+}

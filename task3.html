@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Student database</title>
+	<link rel="stylesheet" href="./task3.css">
+</head>
+<body>
+	<!-- heading -->
+	<section>
+		<div class="section-heading">
+			<h1>Student Records</h1>
+		</div>
+	</section>
+
+	<!-- middle section/buttons -->
+	<section class="section-middle">
+		<!-- buttons -->
+		<div class="group-button">
+			<button class="btn-large" type="button" id="btn_add_panel" onclick="setInputType(0)">Add Student</button>
+			<button class="btn-large" type="button" id="btn_search_panel" onclick="setInputType(1)">Search</button>
+		</div>
+		<!-- input new student box -->
+		<form id="form_add" class="student-input-box" style="display: block;">
+			<div class="student-add-title">
+				<h4>Add Student</h4>
+			</div>
+			<div>
+				<label for="add_id">Student ID</label>
+				<input name="student id" id="add_id" placeholder="ID..."  autocomplete="id">
+			</div>
+			<div>
+				<label for="add_name1">First Name</label>				
+				<input name="name" id="add_name1" placeholder="name..."  autocomplete="first name">
+			</div>
+			<div>			
+				<label for="add_name2">Last Name</label>					
+				<input name="surname" id="add_name2"   placeholder="surname..." autocomplete="last name">
+			</div>	
+			<div>
+				<label for="add_qual">Qualification</label>	
+				<input name="add_qual" id="add_qual"placeholder="none..." autocomplete="None">
+			</div>
+			<div>
+				<button class="btn-submit" type="button" id="btn_add" onclick="addClicked()">Add</button>
+			</div>				
+		</form>
+		<!-- input new student box -->
+		<form id="form_search" class="student-input-box" style="display: none;">
+			<div class="student-search-title">
+				<h4>Search Student</h4>
+			</div>
+			<div>
+				<label for="search_id">Student ID</label>
+				<input name="search id" id="search_id"placeholder="ID..." autocomplete="abc001">
+			</div>
+			<div>
+				<button class="btn-submit" type="button" id="btn_search" onclick="searchClicked()">Search</button>
+			</div>				
+		</form>
+	</section>
+
+	<!-- results section -->
+	<section>
+		<div class="section-students">
+			<div class="student-head">
+				<h3>Current Student List</h3>
+				<button class="btn-refresh" type="button" id="btn_refresh" 
+				onclick="refreshClicked()">Refresh</button>
+			</div>
+			<div class="student-table" id="student_table">
+				<!-- dynamic data -->
+			</div>			
+		</div>
+	</section>
+	<script src="./task3.js"></script>
+</body>
+</html>
